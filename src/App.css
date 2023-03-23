@@ -1,0 +1,128 @@
+.content-wrapper {
+  background-color: white;
+  min-height: 400px;
+  width: 400px;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(3vmin);
+  color: darkslategray;
+  padding: 10px 10px 10px 10px;
+}
+
+ol.tabs{
+  counter-reset: list;
+  list-style-type: none;
+  padding: 0;
+}
+
+ol.tabs li{
+  font-weight: bold;
+  position:relative;
+  padding: 0 15px 0 25px;
+  margin: 0px 0px 0px 0px;
+  border: dashed 1px transparent;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+ol.tabs li:before{
+  counter-increment: list;
+  content: counter(list);
+  position: absolute;
+  left: 0px;
+  width: 20px;
+  height: 20px;
+  line-height:20px;
+  text-align: center;
+  color: #fff;
+  background: lightsalmon;
+  border-radius: 50%;
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+ol.tabs li:hover{
+  border-bottom-color: lightsalmon;
+}
+
+ol.tabs li.active {
+  color: lightsalmon;
+}
+
+ol.tabs li span {
+  font-size:14px;
+  line-height: 29px;
+}
+
+.trash-icon {
+  color: darkslategray;
+  margin-left: 3px;
+}
+
+ol.tabs{
+  counter-reset: list;
+  list-style-type: none;
+  padding: 0;
+}
+
+ol.tabs li{
+  position:relative;
+  padding: 0 15px 0 25px;
+  margin: 0px 0px 0px 0px;
+  border: dashed 1px transparent;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+ol.tabs li:before{
+  counter-increment: list;
+  content: counter(list);
+  position: absolute;
+  left: 0px;
+  width: 20px;
+  height: 20px;
+  line-height:20px;
+  text-align: center;
+  color: #fff;
+  background: lightsalmon;
+  border-radius: 50%;
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+ol.tabs li:hover{
+  border-bottom-color: lightsalmon;
+  font-weight: bold;
+}
+
+ol.tabs li.active {
+  color: lightsalmon;
+}
+
+li span {
+  font-size:14px;
+  line-height: 29px;
+}
+
+.trash-icon:hover {
+  font-size: 18px;
+}
